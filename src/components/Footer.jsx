@@ -34,7 +34,7 @@ const Footer = () => {
                   lineHeight: 1.1,
                 }}
               >
-                Expert Beauty
+                TechnoZon
               </h4>
               <h4
                 variant="subtitle1"
@@ -45,36 +45,36 @@ const Footer = () => {
                   fontWeight: "medium",
                 }}
               >
-                GlowUp
+                GrowUp
               </h4>
             </div>
           </div>
           <div className="flex justify-center items-center gap-[1rem]">
-            <div className="border border-[#F4A261] w-[3.5rem] h-[3.5rem] flex justify-center items-center cursor-pointer">
+            <div className="border border-[#2674CF] w-[3.5rem] h-[3.5rem] flex justify-center items-center cursor-pointer">
               <RiFacebookCircleLine size={30} />
             </div>
-            <div className="border border-[#F4A261] w-[3.5rem] h-[3.5rem] flex justify-center items-center cursor-pointer">
+            <div className="border border-[#2674CF] w-[3.5rem] h-[3.5rem] flex justify-center items-center cursor-pointer">
               <RiInstagramLine size={30} />
             </div>
-            <div className="border border-[#F4A261] w-[3.5rem] h-[3.5rem] flex justify-center items-center cursor-pointer">
+            <div className="border border-[#2674CF] w-[3.5rem] h-[3.5rem] flex justify-center items-center cursor-pointer">
               <PiLinkedinLogoBold size={30} />
             </div>
           </div>
         </div>
-        <div className="w-full border-[1px] border-[#F4A261]" />
+        <div className="w-full border-[1px] border-[#2674CF]" />
         <div className="flex flex-col lg:flex-row justify-between items-center gap-[1rem] lg:gap-0">
           <div className="flex-1 flex justify-center ">
             <div className="text-center">
               <h4 className="font-semibold mb-4 text-[24px]">Explore</h4>
               <ul>
                 <li className="mb-2 text-gray-300 hover:text-orange-300 hover:decoration-transparent transition-all">
-                  <a href="#">Services</a>
+                  <a href="/">Home</a>
+                </li>
+                <li className="mb-2 text-gray-300 hover:text-orange-300 hover:decoration-transparent transition-all">
+                  <Link href="/blog">Blogs</Link>
                 </li>
                 <li className="mb-2 text-gray-300 hover:text-orange-300 hover:decoration-transparent transition-all">
                   <Link href="/contact">Contact</Link>
-                </li>
-                <li className="mb-2 text-gray-300 hover:text-orange-300 hover:decoration-transparent transition-all">
-                  <Link href="/blogs">Blog</Link>
                 </li>
               </ul>
             </div>
@@ -84,10 +84,10 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 text-[24px]">Keep in Touch</h4>
               <ul>
                 <li className="mb-2  text-gray-300">
-                  Address: 24A Kingston St, Las Vegas NC 28202, USA
+                  Address: 24A technozon St, Las Vegas NC 28202, USA
                 </li>
                 <li className="mb-2  text-gray-300">
-                  Mail: support@visage.com
+                  Mail: hr.techozon@gmail.com
                 </li>
                 <li className="mb-2  text-gray-300">
                   Phone: (+22)123-4567-900
@@ -96,7 +96,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full border-[1px] border-[#F4A261] lg:hidden block" />
+        <div className="w-full border-[1px] border-[#2674CF] lg:hidden block" />
         <div className="text-center">
           <p className="text-sm">&copy; 2024 Visage. All rights reserved.</p>
         </div>

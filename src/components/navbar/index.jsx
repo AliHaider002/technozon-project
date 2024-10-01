@@ -7,7 +7,11 @@ const Navbar = () => {
     <div className="flex justify-between items-center ">
       <div className="flex flex-col justify-center items-center">
         <div>
-          <img src="/logo.jpg" alt="logo" className="w-[5rem] h-[5rem]" />
+          <img
+            src="/images/logo.jpg"
+            alt="logo"
+            className="w-[5rem] h-[5rem]"
+          />
         </div>
         <div className="text-[1.2rem] font-[500]">TechnoZone</div>
       </div>

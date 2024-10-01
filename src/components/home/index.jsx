@@ -1,11 +1,12 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
 const HomeComp = () => {
   const heroData = {};
   return (
     <div
       className={
-        " container custom-margin w-full h-[50rem] grid xl:grid-cols-5 grid-cols-1 gap-0"
+        " container custom-margin w-full h-[50rem] grid xl:grid-cols-6 grid-cols-1 gap-0"
       }
     >
       <motion.div
@@ -16,38 +17,39 @@ const HomeComp = () => {
           position: "relative",
           display: "flex",
           flexDirection: "column",
-          backgroundImage: isTabScreen && "url(/assets/hero.jpg)",
-          backgroundPosition: isTabScreen && "right",
+          backgroundImage: "url(/assets/hero.jpg)",
+          backgroundPosition: "right",
           // padding: "5rem 3rem",
         }}
-        className="xl:col-span-2 flex flex-col justify-center items-center "
+        className="xl:col-span-3 flex flex-col justify-center items-center "
       >
         <div className="px-[1rem] lg:px-[3rem] xl:px-0 flex flex-col justify-normal gap-[1rem]">
-          <Typography className="text-[3rem] md:text-[4rem] lg:text-[5rem] leading-tight">
+          <h4 className="text-[3rem] md:text-[4rem] lg:text-[5rem] leading-tight">
             {heroData && heroData.attributes
               ? heroData.attributes.title
-              : "This is test site"}
-          </Typography>
-          <Typography className="text-[1rem] md:text-[1.2rem] font-[400] leading-tight">
+              : "ELITE SOFTWARE SOLUTIONS"}
+          </h4>
+          <h4 className="text-[1rem] md:text-[1.2rem] font-[400] leading-tight px-[1rem]">
             {heroData && heroData.attributes
               ? heroData.attributes.sub_title
-              : "Discover the art of beauty thsi is test description thsi is test descriptionthsi is test description thsi is test description"}
-          </Typography>
-          <button
-            className="w-fit bg-black py-[1.2rem] px-[1.7rem] text-white"
-            onClick={() => window.open("/contact")}
-          >
-            BOOK NOW
-          </button>
-          <Typography className="hidden md:block lg:text-[9rem] border-black text-white leading-tight ">
-            Beauty
-          </Typography>
+              : "Innovating Tomorrow's Software Solutions Today, Empowering Innovation with Big Ideas in Every Byte, and Shaping the Future with Bold Ideas and Smart Software Solutions"}
+          </h4>
+          <h4 className="hidden md:block lg:text-[9rem] border-black text-white leading-tight ">
+            Software
+          </h4>
         </div>
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0.9 }} // Initial scale of the image
+        animate={{ scale: 1 }} // Target scale for the zoom-out effect
+        transition={{ duration: 1 }} // Duration of the zoom-out animation
+        className="z-0 col-span-3 xl:block hidden"
+      >
         <motion.div
           style={{
             position: "absolute",
             top: "70%", // Position in the middle of the parent container vertically
-            right: "-10%", // Position in the middle of the parent container horizontally
+            left: "-9%", // Position in the middle of the parent container horizontally
             transform: "translate(-50%, -50%)", // Offset to center the element
             width: "8rem",
             height: "8rem",
@@ -71,7 +73,7 @@ const HomeComp = () => {
           }}
         >
           <img
-            src={"/assets/Green.png"}
+            src={"/images/logo.jpg"}
             style={{
               width: "100%",
               height: "100%",
@@ -80,13 +82,6 @@ const HomeComp = () => {
             alt="Picture of the author"
           />
         </motion.div>
-      </motion.div>
-      <motion.div
-        initial={{ scale: 0.9 }} // Initial scale of the image
-        animate={{ scale: 1 }} // Target scale for the zoom-out effect
-        transition={{ duration: 1 }} // Duration of the zoom-out animation
-        className="border-red-500 col-span-3 xl:block hidden"
-      >
         <img
           src={
             heroData &&
@@ -94,9 +89,9 @@ const HomeComp = () => {
             heroData.attributes.image &&
             heroData.attributes.image.data
               ? uploads_uri + heroData.attributes.image.data.attributes.url
-              : "/assets/hero.jpg"
+              : "/images/hero_image.jpg"
           }
-          className="border-red-500 w-full h-full object-cover"
+          className="w-full h-full object-cover"
           alt="hero_img"
         />
       </motion.div>
