@@ -90,7 +90,7 @@ const Footer = () => {
                   Mail: hr.techozon@gmail.com
                 </li>
                 <li className="mb-2  text-gray-300">
-                  Phone: (+22)123-4567-900
+                  Phone: (+92)335-6701-234
                 </li>
               </ul>
             </div>
@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
         <div className="w-full border-[1px] border-[#2674CF] lg:hidden block" />
         <div className="text-center">
-          <p className="text-sm">&copy; 2024 Visage. All rights reserved.</p>
+          <p className="text-sm">&copy; 2024 TechnoZon. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogHero = ({ blogs }) => {
   return (
-    <div className="grid md:grid-cols-3 grid-cols-1 gap-0">
+    <div className="grid md:grid-cols-3 grid-cols-1 lg:gap-0 gap-[1rem]">
       {blogs &&
         blogs.slice(0, 3).map((v, i) => {
           return (
@@ -23,7 +23,7 @@ const BlogHero = ({ blogs }) => {
                     </div>
                     <div className="text-[0.75rem] font-bold text-[black]/50">
                       {v.category} - by{" "}
-                      <span className="text-black">{v.author_name}</span>
+                      <span className="text-red-500">{v.author_name}</span>
                     </div>
                     <div className="text-[1.2rem] font-bold hover:text-red-500 transition-all pr-[1rem]">
                       {v.title}

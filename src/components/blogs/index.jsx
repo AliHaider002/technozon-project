@@ -15,8 +15,9 @@ export const getBlogsData = async () => {
 
 const BlogsPage = async () => {
   const blogs = await getBlogsData();
+
   return (
-    <div className="flex flex-col justify-normal gap-[2rem]">
+    <div className="flex flex-col justify-normal gap-[2rem] lg:px-0 px-[1rem]">
       <div>
         <BlogHero blogs={blogs} />
       </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center ">
+    <div className="flex lg:flex-row flex-col justify-between items-center ">
       <div className="flex flex-col justify-center items-center">
         <div>
           <img
@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <div className="text-[1.2rem] font-[500]">TechnoZone</div>
       </div>
-      <div className="flex justify-normal gap-[3rem] text-[1rem] font-[600]  ">
+      <div className="flex justify-normal items-center lg:gap-[3rem] gap-[1rem] text-[1rem] font-[600]  ">
         <Link href={"/"}>
           <div className="hover:text-red-400 px-[0.2rem] transition-all duration-400 border-b-[2px] border-transparent hover:border-red-400 cursor-pointer">
             Home
@@ -29,6 +29,11 @@ const Navbar = () => {
         <Link href={"/contact"}>
           <div className="hover:text-red-400 px-[0.2rem] transition-all duration-400 border-b-[2px] border-transparent hover:border-red-400 cursor-pointer">
             Contact Us
+          </div>
+        </Link>
+        <Link href={"/upload"}>
+          <div className="bg-[#2674CF] text-white rounded-full hover:bg-[#272660] py-[0.5rem] px-[0.7rem] transition-all duration-400 border-b-[2px] border-transparent cursor-pointer">
+            Upload
           </div>
         </Link>
       </div>

@@ -36,12 +36,13 @@ const Services = () => {
             <h4 className="text-[1.5rem] font-bold">{feature.title}</h4>
             <h4
               variant="body1"
-              sx={{
+              style={{
                 color: "#6D6D6D",
                 maxWidth: "350px",
                 wordWrap: "break-word", // Ensure long words break correctly
                 margin: "12px auto",
               }}
+              className="lg:text-right text-center"
             >
               {feature.description}
             </h4>

@@ -24,14 +24,14 @@ export const MARQUES = [
 export const CONTACT_DETAILS = [
   {
     title: "Mail Us",
-    info: "support@visage.com",
+    info: "hr.techozon@gmail.com",
   },
   {
     title: "Visit Us",
-    info: "24A Kingston St,Los Vegas NC ",
+    info: "24A technozon St, Las Vegas NC 28202, USA",
   },
   {
     title: "Call Us",
-    info: "(+22)123-4567-900",
+    info: "(+92)335-6701-234",
   },
 ];

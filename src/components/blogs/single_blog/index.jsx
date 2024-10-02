@@ -37,7 +37,7 @@ const Single_Blog = async ({ params }) => {
             </div>
           </div>
 
-          <div className="w-full max-h-[50rem]">
+          <div className="w-full h-[50rem] overflow-hidden">
             <img
               src={blogData.image}
               className="w-full h-full object-cover"
